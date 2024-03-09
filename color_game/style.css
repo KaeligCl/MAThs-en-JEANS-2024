@@ -1,0 +1,79 @@
+body {
+    font-family: Roboto  , sans-serif;
+    text-align: center;
+    background-color:white;
+}
+
+section {
+    width: 600px;
+    margin: auto;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#indic-board {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cell1,
+.cell2,
+.cell3,
+.cell4,
+.cell5,
+.cell6,
+.cell7,
+.cell8,
+.cell9,
+.cell10,
+.cell11 {
+    width: 52px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    /*max-width: 100%;
+    max-height: 100%;*/
+    justify-content: center;
+    background-color: white;
+}
+
+.indice {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+#color-input {
+    margin-top: 10px;
+}
+
+#result {
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    background-color: bisque;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    display: block;
+}

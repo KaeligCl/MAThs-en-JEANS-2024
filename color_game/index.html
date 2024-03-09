@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script src="function.js" async></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Color Game
+        </title>
+    </head>
+    <body>
+        <h1>Color Game</h1>
+        <section id="box">
+            <br>
+            <div id="text">
+                <p>
+                    <h2> Principe du jeu </h2>
+                    Le but du jeu pour le joueur 1 est d'aligner 4 case de différentes couleur ( R / V / J / B ) peut importe l'ordre.<br></br>
+                    Le but du jeu pour le joueur 2 est de tout faire pour empécher le joueur 1 de gagner mais, il n'a pas le droit de jouer à côté du dernier placment du joueur 1.<br></br>
+                    Le jeu s'arrete quand: soit le joueur 1 gagne (4 couleur différentes sont aligner) soit le joueur 2 gagne (le joueur 1 n'as pas pu aligner 4 cases de couleur différentes).<br></br> 
+                    <u>Comment utiliser le jeu?:</u>
+                    cliquez sur l'un des 4 boutons ( V / R / J / B ) qui ce situent en dessous du tableau de jeu puis cliquez sur l'une des cases du plateau de jeu où vous voulez placer la couleur
+                </p>
+            </div>
+
+            <div id="game-board"></div>
+            <div id="indice-board"></div>
+            <div id="color-input">
+                <label for="color">Choisir entre: 
+                    <button id="colorV" onclick="setColorV()">V</button> / 
+                    <button id="colorR" onclick="setColorR()">R</button> / 
+                    <button id="colorJ" onclick="setColorJ()">J</button> / 
+                    <button id="colorB" onclick="setColorB()">B</button> </label>
+            </div>
+            <div id="result"> Player 1 turn </div>
+            <button onclick="playAgain()">Play again</button>
+            <button onclick="showHide()">Show/Hide rules</button>
+        </section>
+    </body>
+</html>
